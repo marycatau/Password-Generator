@@ -7,11 +7,14 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="./Develop/style.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
+      
+      <!-- step 1 -->
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
@@ -28,6 +31,62 @@
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
+
+      <!-- step 2  password criteria-->
+      <section id="step2" class="card">
+        <div class="card-header">
+          <h2>Password criteria</h2>
+        </div>
+        <div class="card-body">
+          <ol>
+            <li>Length of the Password must be within 8-128 characters.</li>
+            <li>Password could include Uppercase letter, Lowercase letter, numberic and/or special characters.</li>
+          </ol>
+        </div>
+        <div class="card-footer">
+          <button id="NextCriteria" class="btn">Next</button>
+        </div> 
+      </section>
+
+      <!-- step 3  Length of Password-->
+      <section id="step3" class="card">
+        <div class="card-header">
+          <h2>Length of Password</h2>
+        </div> 
+        <div class="card-body">
+          <label for ="pwlength">Password length : </label>
+          <input  type="number" name="pwlength" id="pwlength" max="128" min="8">
+          <p>( must be within 8 - 128 characters )</p>
+        </div>
+        <div class="card-footer">
+          <button id="NextLength" class="btn">Next</button>
+        </div> 
+      </section>
+
+      <!-- Step 4 Character type-->
+      <section id="step4" class="card">
+        <div class="card-header">
+          <h2>Character type</h2>
+        </div> 
+        <div class="card-body">
+          <input type="checkbox" id="Lowercase"> 
+          <label for ="Lowercase">Lowercase</label> 
+          <br>
+          <input type="checkbox" id="Uppercase"> 
+          <label for ="Uppercase">Uppercase</label> 
+          <br>
+          <input type="checkbox" id="Numberic"> 
+          <label for ="Numberic">Numberic</label> 
+          <br>
+          <input type="checkbox" id="SpecialChar"> 
+          <label for ="SpecialChar">Special Character</label> 
+          <br>
+          <P>At least one characters type must be selected</P>
+        <div class="card-footer">
+          <button id="Submit" class="btn">Submit</button>
+        </div> 
+      </section>
+      
     </div>
     <script src="./Develop/script.js"></script>
   </body>
