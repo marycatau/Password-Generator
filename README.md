@@ -21,7 +21,7 @@
 
 * Screenshot of the deployed application
 
-![ScreenShot of the deployed application](https://raw.githubusercontent.com/marycatau/Password-Generator/main/assets/images/screenshot%20of%20deployed%20application.jpeg)
+![ScreenShot of the deployed application](https://github.com/marycatau/Password-Generator/blob/main/Assets/Images/screenshot%20of%20deployed%20application%20(2).jpeg?raw=true)
 
 
 * Link to deployed Application
