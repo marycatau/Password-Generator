@@ -71,7 +71,7 @@ function writePassword() {
   console.debug(specialchar.checked);
 
   var x = lowercase.checked + uppercase.checked + numberic.check + specialchar.checked;
-  console.log(x);
+  console.debug(x);
 
   //check if the character type selected or not
   if (lowercase.checked || uppercase.checked || numberic.checked ||specialchar.checked) {
